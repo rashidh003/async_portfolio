@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'roboto_condensedregular';
+    src: url('asserts/fonts/robotocondensed-regular-webfont.woff2') format('woff2'),
+         url('asserts/fonts/robotocondensed-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('asserts/fonts/ubuntu-regular-webfont.woff2') format('woff2'),
+         url('asserts/fonts/ubuntu-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.rotate-y-180{
+    transform: rotateY(180deg);
+}
+
+.backface-hidden{
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; 
+}

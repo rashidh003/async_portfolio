@@ -5,18 +5,6 @@ async function initialDomLoader(){
     return data;
 }
 
-function rotate() {
-    const box = document.querySelector('.box');
-    box.classList.add('rotate-y-180');
-}
-
-function backRotate() {
-    const box = document.querySelector('.box');
-    box.classList.remove('rotate-y-180');
-}
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('.link');
     const right = document.querySelector('#right');
@@ -24,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initialDomLoader().then((data)=>{
         right.innerHTML = data;
     })
-
     links.forEach(link => {
         link.addEventListener('click', async (e) => {
             e.preventDefault();
