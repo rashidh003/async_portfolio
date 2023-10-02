@@ -1,6 +1,7 @@
 
+
 async function initialDomLoader(){
-    const response = await fetch("./src/about.html");
+    const response = await fetch("./src/home.html");
     const data = await response.text();
     return data;
 }

@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <title>Document</title>
 </head>
-<body>
-    <div class="container flex w-full">
-        <div id="left" class="flex flex-col fixed h-full p-11 bg-sideBg items-start">
-            <h2 class="text-3xl font-roboto text-bread mb-11 font-bold">Carleen Markey</h2>
+<body class="bg-darkBg w-full">
+    <div class="container flex justify-between w-full">
+        <div id="left" class="flex z-10 sticky flex-col h-screen p-11 bg-purple-100 items-start top-0 left-0 overflow-y-auto">
+            <h2 class="text-4xl font-roboto text-with-shadow text-black underline mb-11 font-bold" data-shadow="Dinesh Pattem">Dinesh Pattem</h2>
             <div class="flex font-ubuntu flex-col">
-                <a href="#" id="home" class="link no-underline my-3 hover:bg-black hover:text-white px-2 text-black text-l">Home</a>
-                <a href="#" id="about" class="link no-underline my-3 hover:bg-black hover:text-white px-2 text-black text-l">About</a>
-                <a href="#" id="loremipsum" class="link no-underline my-3 hover:bg-black hover:text-white px-2 text-black text-l">Lorem Ipsum</a>
-                <a href="#" id="loremipsum" class="link no-underline my-3 hover:bg-black hover:text-white px-2 text-black text-l">Lorem Ipsum</a>
-                <a href="#" id="contact" class="link no-underline my-3 hover:bg-black hover:text-white px-2 text-black text-l">Contact Me</a>
+                <a href="#" id="home" class="link no-underline my-3 hover:text-white hover:bg-black px-2 text-black text-l">Home</a>
+                <a href="#" id="skills" class="link no-underline my-3 hover:text-white hover:bg-black px-2 text-black text-l">Skills | FOI</a>
+                <a href="#" id="projects" class="link no-underline my-3 hover:text-white hover:bg-black px-2 text-black text-l">Project works</a>
+                <a href="#" id="contact" class="link no-underline my-3 hover:text-white hover:bg-black px-2 text-black text-l">Contact Me</a>
             </div>
         </div>
-        <div id="right" class="flex-1 ml-60 flex w-full flex-col px-20 pb-10 overflow-y-scroll items-center justify-around"></div>
+        <div id="right" class="flex-1 z-10 flex w-full flex-col px-20 pb-10 overflow-y-auto items-center justify-around"></div>
     </div>
 <script src="./src/app.js"></script>
 </body>
